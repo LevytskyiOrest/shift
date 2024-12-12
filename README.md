@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shift Project Setup Instructions
 
-## Getting Started
+Follow the steps below to clone the repository, install dependencies, and run the project locally.
 
-First, run the development server:
+## Steps to Setup
+
+### 1. Clone the Repository
+
+Run the following command to clone the repository to your local machine:
+
+```bash
+git clone <repository-url>
+```
+
+Replace `<repository-url>` with the actual URL of the repository.
+
+### 2. Navigate to the Project Directory
+
+Change to the directory of the cloned repository:
+
+```bash
+cd <project-folder>
+```
+
+Replace `<project-folder>` with the name of the cloned folder.
+
+### 3. Install Dependencies
+
+Install all the required packages using npm:
+
+```bash
+npm install
+```
+
+### 4. Run the Project
+
+Start the development server with the following command:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Approach
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project was developed with the following key features:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Drag & Drop Functionality**:
 
-## Learn More
+   - Users can drag and drop items between different days and users.
+   - Implemented using the `dnd-kit` library for a seamless and customizable experience.
 
-To learn more about Next.js, take a look at the following resources:
+2. **Right-Click Context Menu**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   - Items have a right-click feature that opens a context menu with two actions: Edit and Delete.
+   - This functionality was custom-built without using any additional libraries.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Modals**:
+   - Modals are triggered by selecting an option in the context menu (Edit).
+   - Each modal displays detailed information about the selected item.
+   - These modals were also created without relying on external libraries.
